@@ -74,6 +74,11 @@
 
 (provide-theme 'pumpkin-spice)
 
+;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
 (provide 'pumpkin-spice-theme)
 
 ;;; pumpkin-spice-theme.el ends here
